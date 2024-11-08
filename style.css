@@ -1,0 +1,199 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000; /* Black background for the body */
+    color: #ffffff; /* White text color */
+}
+
+nav {
+    background-color: #000000; /* Black for navbar */
+    color: #ffffff; /* White text color */
+    padding: 1em;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff; /* White text color */
+    text-decoration: none;
+}
+
+nav ul li a.active {
+    border-bottom: 2px solid #d99a6a; /* Lighter sepia accent for active link */
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Section Styles */
+section {
+    padding: 40px 20px; /* Adjusted padding for sections */
+    margin-top: 60px; /* Adjusted margin for navbar */
+    text-align: center; /* Center the section text */
+    background-color: #222222; /* Dark grey background for sections */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+    margin: 20px auto; /* Center the section in the viewport */
+    max-width: 800px; /* Set max width for sections */
+}
+
+/* About Me Section */
+#about {
+    min-height: 60vh; /* Set the minimum height */
+}
+
+/* About Me Text */
+.about-text {
+    text-align: center; /* Center the text within the paragraph */
+    margin: 0 20px; /* Add some margin for better spacing on small screens */
+    line-height: 1.6; /* Increase line height for readability */
+}
+
+/* Profile Picture */
+.profile-pic {
+    width: 150px; /* Set the width for the profile picture */
+    height: 150px; /* Set the height for the profile picture */
+    border-radius: 50%; /* Circular shape */
+    margin: 20px 0; /* Add margin above and below the image */
+    object-fit: cover; /* Maintain aspect ratio and fill the circle */
+}
+
+/* Skills Section */
+#skills {
+    padding: 30px 20px; /* Adjust padding around the skills section */
+}
+
+/* Skills Container */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping of skill items */
+    justify-content: center; /* Center the skill items */
+}
+
+/* Individual Skill */
+.skill {
+    background-color: #ffffff; /* White background for skill boxes */
+    padding: 15px; /* Padding inside the skill boxes */
+    margin: 10px; /* Margin between skill boxes */
+    text-align: center; /* Center text in skill boxes */
+    flex: 1 0 150px; /* Allow flexibility and set minimum width */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+    color: #000000; /* Black text color for skill boxes */
+}
+
+/* Projects Section */
+#projects {
+    padding: 30px 20px; /* Adjust padding for the projects section */
+}
+
+.project-gallery {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping of project items */
+    justify-content: center; /* Center the project items */
+}
+
+.project-item {
+    margin: 15px; /* Space between project items */
+    text-align: center; /* Center text in project items */
+    background-color: #333333; /* Dark background color for project items */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Prevent overflow */
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1); /* Light shadow for depth */
+    width: calc(50% - 30px); /* Set width to occupy 50% of the row minus margin */
+    max-width: 250px; /* Set a max width for the project item */
+    transition: transform 0.2s, box-shadow 0.2s; /* Smooth transform and shadow */
+    color: #ffffff; /* White text color for project items */
+}
+
+.project-image {
+    width: 100%; /* Full width for images */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.2s; /* Smooth transform for image */
+}
+
+/* Hover effect on project item */
+.project-item:hover {
+    transform: translateY(-5px); /* Lift the card up slightly */
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3); /* Increase shadow for depth */
+}
+
+/* Contact Section */
+#contact {
+    padding: 30px 20px; /* Adjust padding for the contact section */
+    background-color: #222222; /* Dark grey background for contact section */
+    text-align: center; /* Center all text in the contact section */
+}
+
+/* Contact Form Styles */
+.form-group {
+    margin-bottom: 20px; /* Space between form fields */
+    display: flex; /* Align label and input in a row */
+    align-items: center; /* Center vertically */
+}
+
+.form-group label {
+    flex: 0 0 100px; /* Fixed width for labels */
+    margin-right: 10px; /* Space between label and input */
+    color: #ffffff; /* White color for labels */
+}
+
+.form-group input,
+.form-group textarea {
+    flex: 1; /* Allow input and textarea to take the remaining space */
+    padding: 10px; /* Add padding */
+    border: 1px solid #ffffff; /* White border */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #444444; /* Darker background for inputs */
+    color: #ffffff; /* White text color for inputs */
+}
+
+/* Textarea Styles */
+textarea {
+    height: 100px; /* Set a fixed height for the textarea */
+    resize: vertical; /* Allow vertical resizing of textarea */
+}
+
+/* Centering the contact links */
+.contact-links {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align the items */
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+.contact-links li {
+    margin: 5px 0; /* Space between list items */
+}
+
+/* Button Styles */
+button {
+    padding: 10px 20px; /* Button padding */
+    background-color: #000000; /* Black background color */
+    color: #ffffff; /* White text color */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Rounded corners for the button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+button:hover {
+    background-color: #d99a6a; /* Lighter sepia on hover */
+}

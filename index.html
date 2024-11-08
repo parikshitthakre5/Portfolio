@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Parikshit Thakre Portfolio</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="#about" class="active">About Me</a></li>
+        <li><a href="#skills">My Skills</a></li>
+        <li><a href="#projects">My Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact Me</a></li>
+      </ul>
+    </nav>
+
+    <!-- About Me Section -->
+    <section id="about">
+      <h1>About Me</h1>
+      <img src="image/profile.jpg" alt="Pragati Bokade" class="profile-pic" />
+      <p class="about-text">
+        Hello! I'm Parikshit Thakre, a passionate IT engineer focused on web
+        development. I enjoy creating user-friendly websites, and I have
+        experience with C, C++, and AWS. I love bringing creative ideas to life
+        through code and collaborating with others.
+      </p>
+    </section>
+    <section id="education">
+      <h1>Education</h1>
+      <div class="education-item">
+        <h3>Tejaswini Vidya Mandir High School</h3>
+        <p>Completed 10th Grade - 83%</p>
+      </div>
+      <div class="education-item">
+        <h3>Shri Mathuradas Mohota College of Science, Nagpur</h3>
+        <p>Completed 12th Grade - 61.50%</p>
+      </div>
+      <div class="education-item">
+        <h3>Pallotti College of Engineering</h3>
+        <p>1st Year Pointer: 9.5</p>
+        <p>2nd Year Pointer: 8.8</p>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h1>My Skills</h1>
+      <div class="skills-container" id="skillsContainer">
+        <div class="skill" draggable="true">C</div>
+        <div class="skill" draggable="true">C++</div>
+        <div class="skill" draggable="true">AWS</div>
+        <div class="skill" draggable="true">HTML</div>
+        <div class="skill" draggable="true">CSS</div>
+        <div class="skill" draggable="true">JavaScript</div>
+        <div class="skill" draggable="true">DBMS</div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h1>My Projects</h1>
+      <div class="project-gallery">
+        <div class="project-item">
+          <img
+            src="image/port.jpg"
+            alt="Portfolio Project"
+            class="project-image"
+          />
+          <h2>Portfolio</h2>
+          <p>A showcase of my work and skills.</p>
+        </div>
+        <div class="project-item">
+          <img
+            src="image/food.png"
+            alt="Food Ordering System"
+            class="project-image"
+          />
+          <h2>Food Ordering System</h2>
+          <p>An app for ordering food online.</p>
+        </div>
+        <div class="project-item">
+          <img src="image/mario.webp" alt="Mario Game" class="project-image" />
+          <h2>Mario Game</h2>
+          <p>A fun Mario game created in JavaScript.</p>
+        </div>
+        <div class="project-item">
+          <img src="image/cal.jpg" alt="Calculator" class="project-image" />
+          <h2>Calculator</h2>
+          <p>A simple calculator web app.</p>
+        </div>
+        <div class="project-item">
+          <img
+            src="image/stock.webp"
+            alt="Webull Clone App"
+            class="project-image"
+          />
+          <h2>Webull Clone App</h2>
+          <p>A clone of the Webull trading platform.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h1>Contact Me</h1>
+      <p>
+        If you have any questions or would like to reach out, feel free to get
+        in touch!
+      </p>
+      <form id="contactForm" onsubmit="submitForm(); return false;">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" placeholder="Your Name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" placeholder="Your Email" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+      <h2>Or connect with me on:</h2>
+      <ul class="contact-links">
+        <li>
+          <strong>GitHub:</strong>
+          <a href="https://github.com/parikshitthakre5" target="_blank"
+            >Parikshit Thakre</a
+          >
+        </li>
+        <li>
+          <strong>Email:</strong>
+          <a href="mailto:parikshitthakre089@gmail.com"
+            >parikshitthakre.22@stvincentngp.edu.in</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <script src="main.js"></script>
+  </body>
+</html>
